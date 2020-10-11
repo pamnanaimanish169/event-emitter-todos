@@ -1,0 +1,25 @@
+<app-todo-add (newTodo)="addNewTodo($event)" (deleteToDo)="deleteNewTodo($event)"></app-todo-add>
+
+<div class="container">
+    <table class="table table-striped">
+        <tr>
+            <th>
+                Company
+            </th>
+            <th>
+                Country
+            </th>
+        </tr>
+    
+        <tr *ngFor="let item of data">
+            <td>
+                {{item.name}}
+            </td>
+
+            <td>
+                {{item.country}}
+            </td>
+        </tr>
+        
+    </table>
+</div>
